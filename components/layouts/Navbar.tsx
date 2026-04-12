@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link
               key={navList + idx}
               href={`#${navList}`}
-              className="capitalize text-gray-400 font-semibold hover:text-primary transition delay-100"
+              className="capitalize text-gray-400 font-semibold hover:text-primary transition delay-75"
             >
               {navList}
             </Link>
