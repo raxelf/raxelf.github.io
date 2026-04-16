@@ -7,12 +7,18 @@ interface CustomButtonTypes {
   newTab?: boolean;
 }
 
-const CustomButton = ({ text, bg, action = "#", newTab }: CustomButtonTypes) => {
-
+const CustomButton = ({
+  text,
+  bg,
+  action = "#",
+  newTab,
+}: CustomButtonTypes) => {
   if (!bg) {
     return (
-      <Link href={action} target={newTab ? "_blank" : undefined}
-        className="px-6 py-2 rounded-lg text-primary hover:text-primary-hover active:text-primary-active cursor-pointer transition delay-75 font-bold"
+      <Link
+        href={action}
+        target={newTab ? "_blank" : undefined}
+        className="w-full md:w-auto text-center md:text-left px-6 py-2 rounded-lg text-primary hover:text-primary-hover active:text-primary-active cursor-pointer transition delay-75 font-bold"
       >
         {text}
       </Link>
@@ -20,8 +26,10 @@ const CustomButton = ({ text, bg, action = "#", newTab }: CustomButtonTypes) => 
   }
 
   return (
-    <Link href={action} target={newTab ? "_blank" : undefined}
-      className="bg-primary px-7 py-2 rounded-lg text-background hover:bg-primary-hover active:bg-primary-active cursor-pointer transition delay-75"
+    <Link
+      href={action}
+      target={newTab ? "_blank" : undefined}
+      className="w-full md:w-auto text-center md:text-left bg-primary px-7 py-2 rounded-lg text-background hover:bg-primary-hover active:bg-primary-active cursor-pointer transition delay-75"
     >
       {text}
     </Link>
