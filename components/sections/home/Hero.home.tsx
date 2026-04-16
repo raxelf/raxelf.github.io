@@ -1,4 +1,5 @@
 import CustomButton from "@/components/ui/button";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -28,7 +29,16 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div></div>
+      <div className="relative w-full h-75 md:h-75">
+        <Image
+          src="/responsive-web-illustration.svg"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt="Illustration of web apps"
+          loading="eager"
+          className="object-contain"
+        />
+      </div>
     </section>
   );
 };

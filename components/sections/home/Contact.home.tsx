@@ -16,7 +16,7 @@ const ContactSection = () => {
         {/* form */}
         <form className="flex flex-col gap-6">
           <FormInput
-            label="Your Fullname"
+            label="Your Name"
             placeholder="John Doe"
             inputType="text"
           />
