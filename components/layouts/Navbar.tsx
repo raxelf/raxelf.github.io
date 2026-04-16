@@ -15,7 +15,7 @@ const Navbar = () => {
         </Link>
 
         {/* navigation lists */}
-        <div className="md:flex gap-8 items-center hidden">
+        <div className="md:flex md:gap-6 lg:gap-8 items-center hidden">
           <NavListComponent />
 
           <CustomButton

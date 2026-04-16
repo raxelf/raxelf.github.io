@@ -7,7 +7,7 @@ import TechStackSection from "@/components/sections/home/TechStack.home";
 
 const HomePage = () => {
   return (
-    <div className="px-6 md:px-12 py-16 flex flex-col gap-24">
+    <div className="px-6 md:px-8 lg:px-12 py-16 flex flex-col gap-24">
       <HeroSection />
       <ProjectSection />
       <TechStackSection />

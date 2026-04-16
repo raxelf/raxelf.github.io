@@ -7,7 +7,7 @@ const thisYear = new Date().getFullYear();
 
 const FooterComponent = () => {
   return (
-    <footer className="w-full md:px-12 md:py-8 p-6">
+    <footer className="w-full px-6 md:px-8 lg:px-12 md:py-8 p-6">
       <div className="w-full flex flex-col md:flex-row justify-between md:gap-4 gap-8">
         <div className="flex-col flex gap-4">
           {/* brand name */}
